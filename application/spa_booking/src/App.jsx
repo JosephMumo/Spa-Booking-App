@@ -4,6 +4,8 @@ import Hero from './components/Hero';
 import Space from './components/Space';
 import Services from './components/Services';
 import Tesmonials from './components/Testmonials';
+import Labels from './components/Labels';
+import Staff from './components/Staff';
 
 const App = () => {
     return(
@@ -13,6 +15,8 @@ const App = () => {
             <Space />
             <Services />
             <Tesmonials />
+            <Labels />
+            <Staff />
         </div>
     )
 }
