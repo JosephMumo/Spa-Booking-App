@@ -8,6 +8,7 @@ import Labels from './components/Labels';
 import Staff from './components/Staff';
 import Appointment from './components/Appointment';
 import Pricing from './components/Pricing'
+import Footer from './components/Footer';
 
 const App = () => {
     return(
@@ -21,6 +22,7 @@ const App = () => {
             <Staff />
             <Appointment/>
             <Pricing />
+            <Footer />
         </div>
     )
 }
