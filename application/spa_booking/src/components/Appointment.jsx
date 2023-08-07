@@ -7,8 +7,8 @@ function Appointment() {
     const { appointment, setAppointment, data, setData, handleChange, handleSubmit } = useContext(myContext)
 
     useEffect(() => {
-        localStorage.setItem('booking', appointment.toString())
-        console.log(localStorage.getItem('booking'))
+        localStorage.setItem('booking', JSON.stringify(appointment))
+        console.log(JSON.parse(localStorage.getItem('booking')))
     },[appointment])
     
     return ( 
