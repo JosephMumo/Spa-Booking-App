@@ -6,10 +6,12 @@ import Services from './components/Services';
 import Tesmonials from './components/Testmonials';
 import Labels from './components/Labels';
 import Staff from './components/Staff';
+import Appointment from './components/Appointment';
+import Pricing from './components/Pricing'
 
 const App = () => {
     return(
-        <div className=''>
+        <div>
             <Landing />
             <Hero />
             <Space />
@@ -17,6 +19,8 @@ const App = () => {
             <Tesmonials />
             <Labels />
             <Staff />
+            <Appointment/>
+            <Pricing />
         </div>
     )
 }
