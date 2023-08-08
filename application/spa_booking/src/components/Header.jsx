@@ -13,7 +13,7 @@ function Header() {
     
     return (
         <>
-            <div className={menu ? 'bg-black flex flex-row justify-between px-10 py-3' :'flex flex-row justify-between px-10 py-3'}>
+            <div className='flex flex-row justify-between px-10 py-3'>
                 <div>
                     <h1 className='text-2xl text-custom font-bold'>BLATE</h1>
                 </div>
@@ -31,15 +31,15 @@ function Header() {
                     </section>
                 </div>
             </div>
-            <div className={menu ? 'bg-black text-custom z-50 h-screen text-center py-20 absolute w-full' : 'hidden'}>
+            <div className={menu ? ' card  text-white z-50 h-screen text-center py-20 absolute w-full' : 'hidden'}>
                 <ul className='grid grid-flow-row place-items-center'>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#home'>Home</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#about'>About</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#services'>Services</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#testmonials'>Testimonials</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#staff'>Staff</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#appointments'>Appointments</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#pricings'>Pricings</a></li>
+                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#home'>Home</a></li>
+                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#about'>About</a></li>
+                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#services'>Services</a></li>
+                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#testmonials'>Testimonials</a></li>
+                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#staff'>Staff</a></li>
+                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#appointments'>Appointments</a></li>
+                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#pricings'>Pricings</a></li>
                 </ul>
             </div>
         </>
