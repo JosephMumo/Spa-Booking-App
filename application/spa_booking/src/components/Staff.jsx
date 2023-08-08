@@ -7,8 +7,8 @@ import pic4 from '../images/emp5.jpg'
 
 function Staff() {
     return ( 
-        <div className='text-center text-white w-full p-8 bg-black'>
-            <h1 className='text-3xl font-bold'>OUR STAFFS</h1>
+        <div className='text-center text-white w-full p-8 bg-black' id='staff'>
+            <h1 className='text-3xl font-bold'>OUR STAFF</h1>
             <div className='w-full flex justify-center'>
                 <PiDotsThreeOutlineBold size={30} className='text-custom'/>
             </div>

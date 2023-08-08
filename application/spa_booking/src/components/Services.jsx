@@ -1,6 +1,7 @@
 import React from 'react'
 import dark from '../images/dark.jpg'
 import { PiDotsThreeOutlineBold } from 'react-icons/pi'
+import { BiDownArrowCircle } from 'react-icons/bi'
 import barber from '../images/barber.png'
 import massage from '../images/massage.png'
 import spa from '../images/spa.png'
@@ -39,7 +40,7 @@ function Services() {
     ]
     
     return (
-        <div className='p-8  text-center text-white relative bg-fixed xl:h-screen' style={styles}>
+        <div className='p-8  text-center text-white relative bg-fixed xl:h-screen' style={styles} id='services'>
             <h1 className='mt-6 text-3xl font-bold'>OUR SERVICES</h1>
             <div className='w-full grid place-items-center text-custom'>
                 <PiDotsThreeOutlineBold size="30px" />
@@ -57,7 +58,9 @@ function Services() {
                         <br />
                         <p>{item.description}</p>
                         <br />
-                        <p className='text-xl font-bold'>.</p>
+                        <div className='flex justify-center mt-3'>
+                            <BiDownArrowCircle size={28} />
+                        </div>
                         <br />
                     </div>)
                 })}

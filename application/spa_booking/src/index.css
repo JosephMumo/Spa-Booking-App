@@ -9,5 +9,6 @@
         @apply text-white;
         font-family: 'Roboto Serif', serif;
         overflow-x: hidden !important;
+        scroll-behavior: smooth;
     }
 }

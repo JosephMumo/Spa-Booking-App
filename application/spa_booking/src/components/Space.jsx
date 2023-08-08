@@ -3,7 +3,7 @@ import cut from '../images/cut.jpg'
 
 function Space() {
     return ( 
-        <div className='relative grid grid-cols-1 md:grid-cols-2  h-screen'>
+        <div className='relative grid grid-cols-1 md:grid-cols-2  h-screen' id='about'>
             <div className='w-full md:w-{50%}'>
                 <img src={cut} alt='1' className='w-full h-screen object-cover' />
                 <div className='overlay1'></div>

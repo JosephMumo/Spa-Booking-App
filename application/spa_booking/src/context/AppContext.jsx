@@ -1,5 +1,5 @@
 
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 
 
 export const myContext = createContext()
@@ -23,7 +23,6 @@ function AppContextProvider({children}) {
                 }
             )
         })
-        console.log(data)
     }
 
     const handleSubmit = (e) => {
@@ -37,11 +36,15 @@ function AppContextProvider({children}) {
             time:'',
             message: ''
         })
-        console.log(appointment)
     }
+    useEffect(() => {
+        localStorage.setItem('booking', JSON.stringify(appointment))
+    },[appointment])
+
+    const bookingInfo = JSON.parse(localStorage.getItem('booking'))
 
     return ( 
-        <myContext.Provider value={{appointment, setAppointment, data, setData, handleChange, handleSubmit}}>
+        <myContext.Provider value={{appointment, setAppointment, data, setData, handleChange, handleSubmit, bookingInfo}}>
             {children}
         </myContext.Provider>
      );

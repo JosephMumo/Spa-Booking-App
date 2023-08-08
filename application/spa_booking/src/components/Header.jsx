@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { AiOutlineSearch, AiOutlineShoppingCart } from 'react-icons/ai'
 import { CiMenuFries, CiMenuBurger } from 'react-icons/ci'
+import { myContext } from '../context/AppContext'
 
 function Header() {
     const [menu, setMenu] = useState(false)
+    const { appointment } =  useContext(myContext)
+
+
+    
 
     
     return (
@@ -19,7 +24,7 @@ function Header() {
                     </section>
                     <section className='mx-2 flex flex-row items-center space-x-1 cursor-pointer'>
                         <AiOutlineShoppingCart color='white' />
-                        <p>Cart</p>
+                        <p>Cart[]</p>
                     </section>
                     <section onClick={() => setMenu(!menu)} className='hover:text-custom cursor-pointer'>
                         { menu ? <CiMenuFries /> : <CiMenuBurger />}
@@ -28,12 +33,13 @@ function Header() {
             </div>
             <div className={menu ? 'bg-black text-custom z-50 h-screen text-center py-20 absolute w-full' : 'hidden'}>
                 <ul className='grid grid-flow-row place-items-center'>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#'>Home</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#'>About</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#'>Services</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#'>Testimonials</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#'>Appointments</a></li>
-                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#'>Pricings</a></li>
+                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#home'>Home</a></li>
+                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#about'>About</a></li>
+                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#services'>Services</a></li>
+                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#testmonials'>Testimonials</a></li>
+                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#staff'>Staff</a></li>
+                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#appointments'>Appointments</a></li>
+                    <li className='mt-3 text-lg p-2 rounded-sm hover:text-white hover:bg-neutral-900 w-64'><a href='#pricings'>Pricings</a></li>
                 </ul>
             </div>
         </>

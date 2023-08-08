@@ -1,4 +1,4 @@
-import React, {useContext, useEffect } from 'react'
+import React, {useContext} from 'react'
 import { PiDotsThreeOutlineBold } from 'react-icons/pi'
 import { myContext } from '../context/AppContext';
 
@@ -6,13 +6,9 @@ import { myContext } from '../context/AppContext';
 function Appointment() {
     const { appointment, setAppointment, data, setData, handleChange, handleSubmit } = useContext(myContext)
 
-    useEffect(() => {
-        localStorage.setItem('booking', JSON.stringify(appointment))
-        console.log(JSON.parse(localStorage.getItem('booking')))
-    },[appointment])
     
     return ( 
-        <div className='bg-neutral-950 p-8 w-full text-white text-center'>
+        <div className='bg-neutral-950 p-8 w-full text-white text-center' id='appointments'>
             <h1 className='text-3xl font-bold'>MAKE AN APPOINTMENT</h1>
             <div className='w-full flex justify-center text-custom mb-5'>
                 <PiDotsThreeOutlineBold size={30}/>

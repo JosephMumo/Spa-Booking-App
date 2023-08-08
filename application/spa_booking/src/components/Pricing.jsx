@@ -5,7 +5,7 @@ import { PiDotsThreeOutlineBold } from 'react-icons/pi'
 
 function Pricing() {
     return ( 
-        <div className='relative grid grid-cols-1 md:grid-cols-2  h-screen'>
+        <div className='relative grid grid-cols-1 md:grid-cols-2  h-screen' id='pricing'>
             <div className='w-full md:w-{50%}'>
                 <img src={chair} alt='1' className='w-full h-screen object-cover' />
                 <div className='overlay1'></div>
