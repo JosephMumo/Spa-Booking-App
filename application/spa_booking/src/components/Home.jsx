@@ -8,7 +8,7 @@ function Home() {
             <h1 className='text-6xl font-bold'>BLA<span className='text-custom'>TE</span></h1>
             <p>Unleash Your Style: Where Grooming Meets Glamour!</p>
             <br />
-            <button className='bg-custom p-2 rounded-sm'><a href='#appointments'>Book Appointment</a></button>
+            <button className='bg-custom p-2 rounded-sm transition ease-in delay-150 hover:translate-y-3 hover:scale-110'><a href='#appointments'>Book Appointment</a></button>
         </div>
      );
 }

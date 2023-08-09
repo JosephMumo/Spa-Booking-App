@@ -17,13 +17,13 @@ function Header() {
                 <div>
                     <h1 className='text-2xl text-custom font-bold'>BLATE</h1>
                 </div>
-                <div className='flex flex-row justify-between space-x-5 items-center text-white'>
-                    <section className='mx-2 flex flex-row items-center space-x-1 cursor-pointer'>
-                        <AiOutlineSearch color='white' />
+                <div className='flex flex-row justify-between space-x-5 items-center text-white text-lg'>
+                    <section className='mx-2 flex flex-row items-center space-x-1 cursor-pointer hover:text-custom'>
+                        <AiOutlineSearch />
                         <p>Search</p>
                     </section>
-                    <section className='mx-2 flex flex-row items-center space-x-1 cursor-pointer'>
-                        <AiOutlineShoppingCart color='white' />
+                    <section className='mx-2 flex flex-row items-center space-x-1 cursor-pointer hover:text-custom'>
+                        <AiOutlineShoppingCart />
                         <p>Cart[]</p>
                     </section>
                     <section onClick={() => setMenu(!menu)} className='hover:text-custom cursor-pointer'>
@@ -31,15 +31,15 @@ function Header() {
                     </section>
                 </div>
             </div>
-            <div className={menu ? ' card  text-white z-50 h-screen text-center py-20 absolute w-full' : 'hidden'}>
+            <div className={menu ? ' card  text-white z-50 h-auto text-center w-full py-20 absolute' : 'hidden'}>
                 <ul className='grid grid-flow-row place-items-center'>
-                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#home'>Home</a></li>
-                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#about'>About</a></li>
-                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#services'>Services</a></li>
-                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#testmonials'>Testimonials</a></li>
-                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#staff'>Staff</a></li>
-                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#appointments'>Appointments</a></li>
-                    <li className='mt-3 font-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#pricings'>Pricings</a></li>
+                    <li className='mt-3 font-semi-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#home'>Home</a></li>
+                    <li className='mt-3 font-semi-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#about'>About</a></li>
+                    <li className='mt-3 font-semi-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#services'>Services</a></li>
+                    <li className='mt-3 font-semi-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#testmonials'>Testimonials</a></li>
+                    <li className='mt-3 font-semi-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#staff'>Staff</a></li>
+                    <li className='mt-3 font-semi-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#appointments'>Appointments</a></li>
+                    <li className='mt-3 font-semi-bold text-2xl p-2 rounded-sm hover:text-custom hover:bg-neutral-900 w-64'><a href='#pricings'>Pricings</a></li>
                 </ul>
             </div>
         </>

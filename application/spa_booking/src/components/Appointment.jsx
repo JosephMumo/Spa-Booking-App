@@ -21,7 +21,7 @@ function Appointment() {
                     <input onChange={handleChange} type='time' name='time' value={data.time} placeholder='TIME' className='h-10 pl-2 rounded-md bg-black'/>
                 </div>
                 <textarea onChange={handleChange} name='message' value={data.message} placeholder='MESSAGE' className='h-48 bg-black p-2 rounded-md' />
-                <button className='bg-custom w-36 p-1 mt-5 rounded-md'>Submit </button>
+                <button className='bg-custom w-36 p-1 mt-5 rounded-md transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>Submit </button>
             </form>
         </div>
      );

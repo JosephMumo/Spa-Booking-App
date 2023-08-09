@@ -48,7 +48,7 @@ function Services() {
             <p className='my-3'> Experience expert haircuts, beard trims, shaves, and styling by skilled professionals.</p>
             <div className='mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 place-items-center'>
                 { Data.map(item => {
-                    return (<div className='text-center h-auto w-68 gap-1 rounded-sm bg-transparent  outline-custom place-items-center p-3 py-5 mt-3 hover:border border-custom'
+                    return (<div className='text-center h-auto w-68 gap-1 rounded-sm bg-transparent  outline-custom place-items-center p-3 py-5 mt-3 hover:border border-custom transition:ease-in-out hover:scale-110'
                         key={item.id}>
                         <div className='w-full flex justify-center'>
                             <img src={item.imgUrl} alt='1' />
@@ -58,7 +58,7 @@ function Services() {
                         <br />
                         <p>{item.description}</p>
                         <br />
-                        <div className='flex justify-center mt-3'>
+                        <div className='flex justify-center mt-3 hover:animate-bounce'>
                             <BiDownArrowCircle size={28} />
                         </div>
                         <br />

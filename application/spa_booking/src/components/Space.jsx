@@ -18,7 +18,7 @@ function Space() {
                      Our skilled barbers stay ahead of trends to provide you with the latest styles, ensuring you leave feeling confident and looking your best
                 </p>
                 <br />
-                <button className='bg-custom p-2 rounded mt-5'>More About Us</button>
+                <button className='bg-custom p-2 rounded mt-5 transition ease-in delay-150 hover:-translate-y-1 hover:scale-110 duration-300'>More About Us</button>
             </div>
         </div>
      );
